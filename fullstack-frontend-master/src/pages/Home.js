@@ -30,7 +30,9 @@ export default function Home() {
               <th scope="col">S.N</th>
               <th scope="col">Name</th>
               <th scope="col">Username</th>
-              <th scope="col">Email</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Address</th>
+                          <th scope="col">ZipCode</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
@@ -42,7 +44,9 @@ export default function Home() {
                 </th>
                 <td>{user.name}</td>
                 <td>{user.username}</td>
-                <td>{user.email}</td>
+                    <td>{user.email}</td>
+                    <td>{user.addr}</td>
+                    <td>{user.zipCode}</td>
                 <td>
                   <Link
                     className="btn btn-primary mx-2"
@@ -66,7 +70,8 @@ export default function Home() {
               </tr>
             ))}
           </tbody>
-        </table>
+              </table>
+              
       </div>
     </div>
   );

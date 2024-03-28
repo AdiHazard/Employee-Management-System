@@ -8,10 +8,12 @@ export default function AddUser() {
   const [user, setUser] = useState({
     name: "",
     username: "",
-    email: "",
+      email: "",
+      addr: "",
+    zipCode:""
   });
 
-  const { name, username, email } = user;
+    const { name, username, email, addr, zipCode } = user;
 
   const onInputChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -68,7 +70,34 @@ export default function AddUser() {
                 value={email}
                 onChange={(e) => onInputChange(e)}
               />
-            </div>
+             </div>
+                      <div className="mb-3">
+                          <label htmlFor="addr" className="form-label">
+                              Address
+                          </label>
+                          <input
+                              type={"text"}
+                              className="form-control"
+                              placeholder="Enter your Address"
+                              name="addr"
+                              value={addr}
+                              onChange={(e) => onInputChange(e)}
+                          />
+                      </div>
+                      <div className="mb-3">
+                          <label htmlFor="Zipcode" className="form-label">
+                              Zipcode
+                          </label>
+                          <input
+                              type={"text"}
+                              className="form-control"
+                              placeholder="Enter your zipcode"
+                              name="zipCode"
+                              value={zipCode}
+                              onChange={(e) => onInputChange(e)}
+                          />
+                      </div>
+
             <button type="submit" className="btn btn-outline-primary">
               Submit
             </button>
