@@ -21,8 +21,7 @@ export default function Home() {
     loadUsers();
   };
 
-  return (
-    <div className="container">
+  return <div className="container">
       <div className="py-4">
         <table className="table border shadow">
           <thead>
@@ -74,5 +73,5 @@ export default function Home() {
               
       </div>
     </div>
-  );
+ ;
 }

@@ -13,8 +13,18 @@ public class User {
     private String username;
     private String name;
     private String email;
-    private String address;
+    private String addr;
     private String zipCode;
+    private String imagePath;
+
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
+    }
 
     public Long getId() {
         return id;
