@@ -108,7 +108,7 @@ export default function EditUser() {
                               onChange={(e) => onInputChange(e)}
                           />
                       </div>
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn btn-secondary">
               Submit
             </button>
             <Link className="btn btn-outline-danger mx-2" to="/Home">

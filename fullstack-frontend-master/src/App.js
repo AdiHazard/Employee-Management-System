@@ -12,15 +12,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+
+              {/*<Navbar />*/}
 
               <Routes>
                   <Route exact path="/" element={<Login />} />
-                  <Route path="/Home" element={<Home />} />
-          <Route exact path="/adduser" element={<AddUser />} />
-          <Route exact path="/edituser/:id" element={<EditUser />} />
-                  <Route exact path="/viewuser/:id" element={<ViewUser />} />
-                  {/*<Route path="/login" element={<Login />} />*/}
+                  <Route path="/Home" element={<><Navbar /><Home /></>} />
+                  <Route exact path="/adduser" element={<><Navbar />><AddUser /></>} />
+                  <Route exact path="/edituser/:id" element={<><Navbar /><EditUser /></>} />
+                  <Route exact path="/viewuser/:id" element={<><Navbar /><ViewUser /></>} />
+                  <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
     </div>

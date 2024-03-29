@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import {create} from "./Loginservice";
+import { create } from "./Loginservice";
+/*import Navbar from "./layout/Navbar";*/
 
 function Login() {
     const initialState = {
         email: "",
         password: ""
-    
+
     }
+        
     const [login, setLogin] = useState(initialState);
     console.log(create);
     /*const [email, setEmail] = useState("");
@@ -56,7 +58,7 @@ function Login() {
         <div>
             <div class="container">
                 <div class="row">
-                    <h2>Login/Register</h2>
+                    <h2>Login With your Credentials</h2>
                     <hr />
                 </div>
 
