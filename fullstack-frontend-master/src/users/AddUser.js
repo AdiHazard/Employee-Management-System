@@ -98,7 +98,7 @@ export default function AddUser() {
                           />
                       </div>
 
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn btn-success">
               Submit
             </button>
             <Link className="btn btn-outline-danger mx-2" to="/Home">

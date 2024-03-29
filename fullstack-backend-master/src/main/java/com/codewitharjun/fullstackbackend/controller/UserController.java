@@ -33,7 +33,7 @@ User newLoginUser(@RequestBody User newLoginUser) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new UserNotFoundException(id));
     }
-
+//Contributed by - Hrithik Banerjee, Aditya Anand, Shreyaa Bhartyy, Sneha
     @PutMapping("/user/{id}")
     User updateUser(@RequestBody User newUser, @PathVariable Long id) {
         return userRepository.findById(id)

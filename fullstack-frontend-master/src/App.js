@@ -7,6 +7,7 @@ import AddUser from "./users/AddUser";
 import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
 import Login from './pages/Login';
+import Footer from "./layout/Footer";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Router>
 
               {/*<Navbar />*/}
-
+              
               <Routes>
                   <Route exact path="/" element={<Login />} />
                   <Route path="/Home" element={<><Navbar /><Home /></>} />
@@ -22,8 +23,10 @@ function App() {
                   <Route exact path="/edituser/:id" element={<><Navbar /><EditUser /></>} />
                   <Route exact path="/viewuser/:id" element={<><Navbar /><ViewUser /></>} />
                   <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
+              </Routes>
+
+          </Router>
+      <Footer />
     </div>
   );
 }

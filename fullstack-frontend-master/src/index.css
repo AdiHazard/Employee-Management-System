@@ -21,4 +21,28 @@ code {
 table.table.border.shadow{
 
 }
+button, input, optgroup, select, textarea {
 
+}
+
+
+.search-bar {
+    width: 100px;
+    transition: width 0.3s ease;
+    input
+{
+    background-color: #ffffff61;
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color:black;
+}
+}
+    .search-input::placeholder{
+        color:#ff0000;
+    }
+.search-bar:hover {
+    width: 250px;
+}
