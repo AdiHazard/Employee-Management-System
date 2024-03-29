@@ -6,8 +6,8 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Employee Management System
+          <Link className="navbar-brand" to="/Home">
+            Employee Management Application
           </Link>
           <button
             className="navbar-toggler"
@@ -20,10 +20,13 @@ export default function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
+                  {/*<Link className="btn btn-outline-light" to="/">
+                      Login
+                  </Link>*/}
           <Link className="btn btn-outline-light" to="/adduser">
             Add User
           </Link>
+
         </div>
       </nav>
     </div>

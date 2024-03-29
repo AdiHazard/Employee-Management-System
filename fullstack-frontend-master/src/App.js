@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/adduser" element={<AddUser />} />
           <Route exact path="/edituser/:id" element={<EditUser />} />
                   <Route exact path="/viewuser/:id" element={<ViewUser />} />
-                  <Route path="/login" element={<Login />} />
+                  {/*<Route path="/login" element={<Login />} />*/}
         </Routes>
       </Router>
     </div>
